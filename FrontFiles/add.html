@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="add.js" defer></script>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <div class="wrapper">
+        <h1>Add your property to sale</h1>        
+      </div>
+    </header>   
+    <section class="form-container wrapper">    
+      <form id="add-property-form">
+        <label for="img">Picture</label>
+        <input
+          type="img"
+          id="img"
+          name="img"
+          placeholder="https://www.google.com/logo"
+        />
+        <label for="price">Price, EUR</label>
+        <input type="number" id="price" name="price" placeholder="50000" />
+        <label for="saleDescription">Description</label>
+        <input
+          type="text"
+          id="saleDescription"
+          name="description"
+          placeholder="anything you would like to say?"          
+        />
+        <select name="city" id="saleCity">
+          <!-- Generated list here -->
+          <option value="Vilnius">Vilnius</option>
+          <option value="Kaunas">Kaunas</option>
+          <option value="Klaipeda">Klaipėda</option>
+          <option value="Siauliai">Šiauliai</option>
+        </select>
+        <button type="submit" class="add-property-button">Add Property</button>        
+      </form>      
+      <form>
+        <button formaction="index.html">Back</button>
+      </form>
+      <div id="statusMessages">
+        <!-- display server Message -->
+      </div>
+    </section>
+    <footer>
+      <i class="fa-brands fa-twitter"></i>
+      <i class="fa-solid fa-comment"></i>
+      <i class="fa-solid fa-user"></i>
+      <i class="fa-solid fa-envelope"></i><br>
+      &copy; Copyright 2023<br>  
+    </footer>
+  </body>
+</html>
